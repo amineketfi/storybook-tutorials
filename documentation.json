@@ -1397,6 +1397,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/pure-task-list/pure-task-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1408,16 +1418,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/task/task.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/pure-task-list/pure-task-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1617,6 +1617,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/pure-task-list/pure-task-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn",
+                "defaultValue": "(args) => ({\n  props: {\n    ...args,\n    onPinTask: TaskStories.actionsData.onPinTask,\n    onArchiveTask: TaskStories.actionsData.onArchiveTask,\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1632,16 +1642,6 @@
                 "deprecationMessage": "",
                 "type": "StoryFn",
                 "defaultValue": "(args: any) => ({\n  props: {\n    ...args,\n    onPinTask: actionsData.onPinTask,\n    onArchiveTask: actionsData.onArchiveTask,\n  },\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/pure-task-list/pure-task-list.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryFn",
-                "defaultValue": "(args) => ({\n  props: {\n    ...args,\n    onPinTask: TaskStories.actionsData.onPinTask,\n    onArchiveTask: TaskStories.actionsData.onArchiveTask,\n  },\n})"
             },
             {
                 "name": "WithInteractions",
@@ -1776,48 +1776,6 @@
                     "defaultValue": "(args: any) => ({\n  props: {\n    ...args,\n    onPinTask: actionsData.onPinTask,\n    onArchiveTask: actionsData.onArchiveTask,\n  },\n})"
                 }
             ],
-            "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Error",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "StoryFn",
-                    "defaultValue": "(args) => ({\n  props: args,\n})"
-                },
-                {
-                    "name": "WithInteractions",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                }
-            ],
             "src/app/components/pure-task-list/pure-task-list.stories.ts": [
                 {
                     "name": "Default",
@@ -1864,6 +1822,48 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/pure-task-list/pure-task-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn",
+                    "defaultValue": "(args) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "WithInteractions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/pure-inbox-screen/pure-inbox-screen.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
