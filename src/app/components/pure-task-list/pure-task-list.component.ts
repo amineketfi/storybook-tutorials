@@ -20,8 +20,8 @@ export class PureTaskListComponent {
   @Input()
   set tasks(arr: Task[]) {
     const initialTasks = [
-      ...arr.filter((t) => t.state === 'TASK_PINNED'),
-      ...arr.filter((t) => t.state !== 'TASK_PINNED'),
+      ...arr?.filter((t) => t?.state === 'TASK_PINNED'),
+      ...arr?.filter((t) => t?.state !== 'TASK_PINNED'),
     ];
 
     // const filteredTasks = initialTasks.filter(

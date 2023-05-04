@@ -6,6 +6,7 @@ import { TaskComponent } from './task/task.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { TasksState } from '../state/task.state';
 import { PureTaskListComponent } from './pure-task-list/pure-task-list.component';
+import { PureInboxScreenComponent } from './pure-inbox-screen/pure-inbox-screen.component';
 
 @NgModule({
   imports: [CommonModule, NgxsModule.forFeature([TasksState])],
