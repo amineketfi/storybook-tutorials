@@ -7,6 +7,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { Store, NgxsModule } from '@ngxs/store';
 import { importProvidersFrom } from '@angular/core';
+import { fireEvent, within } from '@storybook/testing-library';
 
 import { PureInboxScreenComponent } from './pure-inbox-screen.component';
 import { TaskModule } from '../task.module';
@@ -24,7 +25,6 @@ export default {
           developmentMode: !environment.production,
         }),
       ],
-      providers: [Store],
     }),
     applicationConfig({
       providers: [
@@ -33,6 +33,7 @@ export default {
             developmentMode: !environment.production,
           })
         ),
+        importProvidersFrom(Store),
       ],
     }),
   ],
@@ -48,4 +49,13 @@ export const Default = Template.bind({});
 export const Error = Template.bind({});
 Error.args = {
   error: true,
+};
+
+export const WithInteractions = Template.bind({});
+WithInteractions.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  // Simulates pinning the first taskk
+  await fireEvent.click(canvas.getByLabelText('pinTask-1'));
+  // Simulates pinning the third task
+  await fireEvent.click(canvas.getByLabelText('pinTask-3'));
 };
